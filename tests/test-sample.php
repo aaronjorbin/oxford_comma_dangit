@@ -41,7 +41,7 @@ class OxfordCommaDangitTest extends WP_UnitTestCase {
 	}
 
 	function testParentheticalComma(){
-		$string = 'Nacin, lead developer of WordPress, likes to play hockey and cook meat.'
+		$string = 'Nacin, lead developer of WordPress, likes to play hockey and cook meat.';
 		$newString   = oxford_comma_dangit($string);
 		$this->assertSame($string, $newString );
 	}
