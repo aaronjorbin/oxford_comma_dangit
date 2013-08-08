@@ -27,5 +27,23 @@ class OxfordCommaDangitTest extends WP_UnitTestCase {
 		$this->assertSame($commaString, $newString );
 		$this->assertSame($commaString, $newString2 );
 	}
+
+	function testMultipleSentencesAtOnce(){
+		$string      = 'WordPress is a content management system, application framework and blogging platform. We invited the strippers, JFK and Stalin.' ;
+		$string      = 'WordPress is a content management system, application framework, and blogging platform. We invited the strippers, JFK, and Stalin.' ;
+
+		$newString   = oxford_comma_dangit($string);
+		$newString2  = oxford_comma_dangit($commaString);
+
+		$this->assertSame($commaString, $newString );
+		$this->assertSame($commaString, $newString2 );
+
+	}
+
+	function testParentheticalComma(){
+		$string = 'Nacin, lead developer of WordPress, likes to play hockey and cook meat.'
+		$newString   = oxford_comma_dangit($string);
+		$this->assertSame($string, $newString );
+	}
 }
 
