@@ -2,7 +2,7 @@
 /*
 Plugin Name: Oxford Comma Dangit
 Version: 0.1-alpha
-Description: Oxford Commas are beautiful, clafying, and neccessary.  
+Description: Oxford Commas are beautiful, clarifying, and necessary. 
 Author: jorbin 
 Author URI: http://aaron.jorb.in 
 Plugin URI: http://github.com/aaronjorbin/oxford_comma_dangit 
