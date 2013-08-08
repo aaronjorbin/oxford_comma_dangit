@@ -22,5 +22,6 @@ add_filter('the_content', 'oxford_comma_dangit');
 
 function oxford_comma_dangit($content){
 	/* @TODO:  magic to add the oxford comma when it is needed */
+	$content = preg_replace("/(\w+), (\w+) and (\w+)/", "$1, $2, and $3", $content);
 	return $content;	
 }
